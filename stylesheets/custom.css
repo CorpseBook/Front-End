@@ -1,5 +1,8 @@
 @charset "iso-8859-9";
 @import url("normalize.css");
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700);
+@import url(https://raw.github.com/FortAwesome/Font-Awesome/master/docs/assets/css/font-awesome.min.css);
+
 
 /* --------------------------- Reset ------------------------------*/
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -49,6 +52,7 @@ body {
 	position:relative
 }
 /* --------------------------- Header ------------------------------*/
+
 #text {
 	color:black;
 	font-size: 30px;
@@ -67,15 +71,85 @@ header #nav-button {
 	width:45px;
 	height:45px;
 	float:right;
-	background:url(../images/dark/nav-button.png) no-repeat;
+	background:url(../images/nav-button.png) no-repeat;
 	position:relative;
 	z-index:98;
-	cursor:pointer
+	cursor:pointer;
+	margin-right: 10px;
+
 }
 header .logo {
 	padding-left:0.5em;
 }
 header .logo span{ position:absolute;  white-space:nowrap; padding-left:0.5px; color:#999; font-family: 'Lato'; }
+
+/* ------------ Search Bar ------------------*/
+#search {
+	width:70%;
+}
+
+.search-container{
+  width: 40%;
+  position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	background-color: red;
+}
+
+ header input[type="text"] {
+  height: 40px;
+  font-size: 20px;
+  display: inline-block;
+  font-family: "Lato";
+  font-weight: 100;
+  border: none;
+  outline: none;
+  color: #555;
+  padding: 3px;
+  padding-right: 60px;
+  width: 0px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: none;
+  z-index: 3;
+  transition: width .4s cubic-bezier(0.000, 0.795, 0.000, 1.000);
+  cursor: pointer;
+}
+
+header input[type="text"]:focus:hover {
+  border-bottom: 1px solid #BBB;
+}
+
+header input[type="text"]:focus {
+  width: 700px;
+  z-index: 1;
+  border-bottom: 1px solid #BBB;
+  cursor: text;
+}
+header input[type="submit"] {
+  height: 45px;
+  width: 63px;
+  display: inline-block;
+  color:red;
+  float: right;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAADNQTFRFU1NT9fX1lJSUXl5e1dXVfn5+c3Nz6urqv7+/tLS0iYmJqampn5+fysrK39/faWlp////Vi4ZywAAABF0Uk5T/////////////////////wAlrZliAAABLklEQVR42rSWWRbDIAhFHeOUtN3/ags1zaA4cHrKZ8JFRHwoXkwTvwGP1Qo0bYObAPwiLmbNAHBWFBZlD9j0JxflDViIObNHG/Do8PRHTJk0TezAhv7qloK0JJEBh+F8+U/hopIELOWfiZUCDOZD1RADOQKA75oq4cvVkcT+OdHnqqpQCITWAjnWVgGQUWz12lJuGwGoaWgBKzRVBcCypgUkOAoWgBX/L0CmxN40u6xwcIJ1cOzWYDffp3axsQOyvdkXiH9FKRFwPRHYZUaXMgPLeiW7QhbDRciyLXJaKheCuLbiVoqx1DVRyH26yb0hsuoOFEPsoz+BVE0MRlZNjGZcRQyHYkmMp2hBTIzdkzCTc/pLqOnBrk7/yZdAOq/q5NPBH1f7x7fGP4C3AAMAQrhzX9zhcGsAAAAASUVORK5CYII=) center center no-repeat;
+  text-indent: -10000px;
+  border: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  cursor: pointer;
+  opacity: 0.4;
+  cursor: pointer;
+  transition: opacity .4s ease;
+}
+
+header input[type="submit"]:hover {
+  opacity: 0.8;
+}
 
 /* --------------------------- Slide Menu (Right Menu)------------------------------*/
 #slideMenu {
@@ -84,7 +158,7 @@ header .logo span{ position:absolute;  white-space:nowrap; padding-left:0.5px; c
 	position:fixed;
 	right:0;
 	top:0;
-	background:#363636;
+	background:#FFFFFF;
 	display:none;
 	overflow-y: auto;
 	z-index:0;
@@ -107,11 +181,13 @@ header .logo span{ position:absolute;  white-space:nowrap; padding-left:0.5px; c
 #slideMenu .right{
 	width:80%; float:left
 }
+
 #slideMenu ul {
 	padding:1em
 }
 #slideMenu ul li {
-	border-bottom:#666 solid 1px;
+
+	border-bottom:#CCCCCC solid 1px;
 	overflow:hidden;
 	cursor:pointer
 }
@@ -119,7 +195,7 @@ header .logo span{ position:absolute;  white-space:nowrap; padding-left:0.5px; c
 	border-bottom:none
 }
 #slideMenu ul li span {
-	color:#FFF;
+	color:#000000;
 	display:block;
 	padding:1.5em 0
 }
@@ -284,8 +360,10 @@ article p {
 	clear: both;
 }
 .post-wrapper ul .desc-column {
-	float:left;
 	padding:0 0 1em 0;
+	margin-left: auto;
+  margin-right: auto;
+    width: 100%;
 }
 .post-wrapper ul li span.title {
 	padding-top: 0.4em;
@@ -425,7 +503,7 @@ article p {
 		border-bottom: none;
 	}
 	#menu-main li a, .page-header-menu li a {
-		font-size: 12px;
+		font-size: 20px;
 		height: 154px;
 		width: 154px;
 	}
@@ -448,6 +526,12 @@ article p {
 	i.more.close-1 {
 		background:url(../images/dark/close-1.png) no-repeat;
 	}
+
+	.search-container{
+  width: 65%;
+	background-color: red;
+	}
+
 }
 
 /* --------------------------- Tablets ------------------------------*/

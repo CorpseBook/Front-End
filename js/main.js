@@ -80,25 +80,33 @@ $('.close-3').on('click',function(){
     $slideMenu = $("#slideMenu")
 
     $('#nav-button').on('click', function () {
-
+        $('#main, header#logo, footer').css({
+                'left':'0',
+                'transition' : 'all 0.5s ease-out'
+        })
         if (($slideMenu).is(':visible')) {
             $('.theFixed').remove();
-            $('html, body').css({
-                'overflow': 'auto',
-                'height': 'auto'
-            });
-          /*  $slideMenu.fadeOut(0, function () {
-            });*/
-			$slideMenu.css({'z-index':'98','display':'none'});
-            $('#main, header#logo, footer').css('left','0')
+            // $('html, body').css({
+            //     'height': 'auto'
+            // });
+            // $slideMenu.fadeOut(0, function () {
+            // });
+
+            $slideMenu.css({'z-index':'0','display':'none'});
+            $('#main, header#logo, footer').css({
+                'left':'0',
+                'transition' : 'all 0.5s ease-out'
+            })
         } else {
             $('<div class=theFixed></div>').insertAfter('#main');
             $('html, body').css({
                 'overflow': 'hidden',
-                'height': '100%'
+                'height': '100%',
             });
             $slideMenu.css({'z-index':'0','display':'block'});
-			$('#main, header#logo, footer, .theFixed').css('left','-250px')
+			$('#main, header#logo, footer, .theFixed').css({
+                'left':'-250px',
+            })
         }
     });
 
