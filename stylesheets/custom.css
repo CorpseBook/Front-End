@@ -3,6 +3,7 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700);
 @import url(https://raw.github.com/FortAwesome/Font-Awesome/master/docs/assets/css/font-awesome.min.css);
 
+
 /* --------------------------- Reset ------------------------------*/
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	margin: 0;
@@ -52,7 +53,6 @@ body {
 }
 /* --------------------------- Header ------------------------------*/
 
-
 #text {
 	color:black;
 	font-size: 30px;
@@ -76,6 +76,7 @@ header #nav-button {
 	z-index:98;
 	cursor:pointer;
 	margin-right: 10px;
+
 }
 header .logo {
 	padding-left:0.5em;
@@ -185,6 +186,7 @@ header input[type="submit"]:hover {
 	padding:1em
 }
 #slideMenu ul li {
+
 	border-bottom:#CCCCCC solid 1px;
 	overflow:hidden;
 	cursor:pointer
@@ -362,7 +364,6 @@ article p {
 	margin-left: auto;
   margin-right: auto;
     width: 100%;
-
 }
 .post-wrapper ul li span.title {
 	padding-top: 0.4em;
@@ -529,7 +530,8 @@ article p {
 	.search-container{
   width: 65%;
 	background-color: red;
-}
+	}
+
 }
 
 /* --------------------------- Tablets ------------------------------*/
@@ -555,6 +557,7 @@ article p {
 	}
 }
 										/* --------------------------- Hi-Res / Desktop ------------------------------*/
+
 @media (min-width: 1025px) {
 	#page-wrapper {
 		max-width: 768px;
