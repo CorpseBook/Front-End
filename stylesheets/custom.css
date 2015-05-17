@@ -75,7 +75,7 @@ header #nav-button {
 	position:relative;
 	z-index:98;
 	cursor:pointer;
-	margin-right: 10px;
+	margin-right: 5px;
 }
 header .logo {
 	padding-left:0.5em;

@@ -20,17 +20,17 @@ section.button-group {
 }
 
 .btn{
-	border:1px solid #d1dcdf; 
-	-webkit-border-radius: 3px; 
+	border:1px solid #d1dcdf;
+	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
 	font-size:15px;
-	font-family:arial, helvetica, sans-serif; 
-	padding: 10px 10px 10px 10px; 
-	text-decoration:none; 
+	font-family:arial, helvetica, sans-serif;
+	padding: 10px 10px 10px 10px;
+	text-decoration:none;
 	display:inline-block;
 	color: #D94436;
-	background-color: #f2f5f6; 
+	background-color: #f2f5f6;
 	background-image: -webkit-gradient(linear, left top, left bottom, from(#f2f5f6), to(#c8d7dc));
 	background-image: -webkit-linear-gradient(top, #f2f5f6, #c8d7dc);
 	background-image: -moz-linear-gradient(top, #f2f5f6, #c8d7dc);
@@ -41,7 +41,7 @@ section.button-group {
 
 .btn:hover{
 	border:1px solid #b6c7cc;
-	background-color: #d4dee1; 
+	background-color: #d4dee1;
 	background-image: -webkit-gradient(linear, left top, left bottom, from(#d4dee1), to(#a9c0c8));
 	background-image: -webkit-linear-gradient(top, #d4dee1, #a9c0c8);
 	background-image: -moz-linear-gradient(top, #d4dee1, #a9c0c8);
@@ -84,7 +84,7 @@ ul.show-hide > li > div.desc-column > p.desc {
    float:left;
    width:100%;
    background:#fff;
-   border-bottom:4px solid #000;
+   /*border-bottom:1px solid #CCCCCC;*/ /* Commented this out for no under border */
    overflow:hidden;
    position:relative;
 }
@@ -107,7 +107,8 @@ ul.show-hide > li > div.desc-column > p.desc {
    position:relative;
    right:50%;
 }
-#centeredmenu ul li a {
+#centeredmenu ul li#completed a { /* Added this for rounded edges tabs */
+  border-radius: 10px 0px 0px 10px;
    display:block;
    margin:0 0 0 1px;
    padding:3px 10px;
@@ -116,6 +117,18 @@ ul.show-hide > li > div.desc-column > p.desc {
    text-decoration:none;
    line-height:1.3em;
 }
+
+#centeredmenu ul li#uncompleted a { /* Added this for rounded edges tabs */
+  border-radius: 0px 10px 10px 0px;
+   display:block;
+   margin:0 0 0 1px;
+   padding:3px 10px;
+   background:#ddd;
+   color:#000;
+   text-decoration:none;
+   line-height:1.3em;
+}
+
 #centeredmenu ul li a:hover {
    background:#369;
    color:#fff;
