@@ -29,7 +29,7 @@ $('.close-3').on('click',function(){
         $classStr = $(this).find('.more').attr('class');
 
         if ($default.indexOf('max-height') !== -1) {
-
+            $(this).find('.disable').removeClass('hide')
             $(this).find('.desc').css('max-height', 'inherit');
         } else {
             $(this).find('.desc:hidden').slideDown();
@@ -49,6 +49,7 @@ $('.close-3').on('click',function(){
 
         if ($default.indexOf('max-height') !== -1) {
             $(this).find('.desc').css('max-height', '3.6em');
+            $(this).find('.disable').addClass('hide')
         } else {
             $(this).find('.desc:visible').slideUp();
         }
