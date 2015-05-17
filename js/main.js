@@ -86,14 +86,11 @@ $('.close-3').on('click',function(){
                 'transition' : 'all 0.5s ease-out'
         })
         if (($slideMenu).is(':visible')) {
-            $('.theFixed').remove();
-            // $('html, body').css({
-            //     'height': 'auto'
-            // });
-            // $slideMenu.fadeOut(0, function () {
-            // });
-
-            $slideMenu.css({'z-index':'0','display':'none'});
+            $('.theFixed').remove()
+            $('html, body').css({
+                'overflow': 'auto'
+            });
+            $slideMenu.toggle('slide');
             $('#main, header#logo, footer').css({
                 'left':'0',
                 'transition' : 'all 0.5s ease-out'
@@ -101,8 +98,7 @@ $('.close-3').on('click',function(){
         } else {
             $('<div class=theFixed></div>').insertAfter('#main');
             $('html, body').css({
-                'overflow': 'hidden',
-                'height': '100%',
+                'overflow': 'hidden'
             });
             $slideMenu.css({'z-index':'0','display':'block'});
 			$('#main, header#logo, footer, .theFixed').css({
