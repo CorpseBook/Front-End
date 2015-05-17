@@ -245,6 +245,7 @@ section#main {
 	position:relative;
 	background-color:#FFF;
 	overflow:hidden;
+	padding-top: 10px;
 }
 .content-wrapper {
 	position:relative;
