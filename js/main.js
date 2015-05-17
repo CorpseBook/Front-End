@@ -113,7 +113,24 @@ $('.close-3').on('click',function(){
         }, 0);
         return false;
     });
+
+    // Tabs
+    $('.tabs').find('.tab').css({'display':'none'})
+    displayFirstTab()
+
+    $('body').on('click', '.tabs #centeredmenu a', function(){
+        var contentId = $(this).attr('href')
+        $(this).parents("#centeredmenu").find('a').removeClass('active')
+        $(this).parents('.tabs').find('.tab').css({'display':'none'})
+        $(this).addClass('active')
+        $(contentId).css({'display':'block'})
+    })
+    // End of tab
 });
+
+function displayFirstTab() {
+    $('.tabs').find('.tab').first().css({'display':'block'})
+}
 
 $(window).load(function() {
 $("#status").fadeOut();
