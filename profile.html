@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="stylesheets/custom.css" rel="stylesheet" type="text/css">
+    <link href="stylesheets/profile.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Playfair+Display+SC' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="stylesheets/idangerous.swiper.css">
+    <meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
+    <meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=1, maximum-scale=2">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <script type="text/javascript" src="js/vendor/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="js/vendor/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fittext.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/profile.js"></script>
+  </head>
+  <body>
+    <div id="preloader">
+      <div id="status">&nbsp;</div>
+    </div>
+    <nav id="slideMenu">
+      <ul>
+        <li onClick="window.location.href = 'index.html';">
+          <div class="left"><i class="home"></i></div>
+          <div class="right"><span>Home</span></div>
+        </li>
+        <li onClick="window.location.href = 'aboutus.html';">
+          <div class="left"><i class="about-us"></i></div>
+          <div class="right"><span>About Us</span></div>
+        </li>
+        <li onClick="window.location.href = 'portfolio.html';">
+          <div class="left"><i class="portfolio"></i></div>
+          <div class="right"><span>Portfolio</span></div>
+        </li>
+        <li onClick="window.location.href = 'blog.html';">
+          <div class="left"><i class="blog"></i></div>
+          <div class="right"><span>Blog</span></div>
+        </li>
+        <li onClick="window.location.href = 'gallery.html';">
+          <div class="left"><i class="gallery"></i></div>
+          <div class="right"><span>Gallery</span></div>
+        </li>
+         <li onClick="window.location.href = 'typography.html';">
+          <div class="left"><i class="typography"></i></div>
+          <div class="right"><span>Typography</span></div>
+        </li>
+        <li onClick="window.location.href = 'faq.html';">
+          <div class="left"><i class="faq"></i></div>
+          <div class="right"><span>FAQ</span></div>
+        </li>
+        <li onClick="window.location.href = 'contact.html';">
+          <div class="left"><i class="contact"></i></div>
+          <div class="right"><span>Contact</span></div>
+        </li>
+      </ul>
+    </nav>
+
+    <header id="logo">
+      <div id="nav-button"></div>
+      <a class="logo">
+        <img src="http://snpl.ca/wp-content/uploads/2012/02/Printed-Matter-Book-stack-icon-50x50.png">
+        <span id='text'>CorpseBook</span>
+      </a>
+    </header>
+
+    <section id="main">
+      <div class="content-wrapper">
+        <article>
+          <div id="content" class="post-wrapper noCursor" >
+            <div id="user-profile">
+              <div id="userphoto">
+                <img src="images/avatar.png" alt="default avatar">
+              </div>
+              <div class="desc-column" id="profile-title"> 
+                <span class="title color-red"><h3>USER PROFILE</h3></span>
+              </div>
+              <div class="clearfix"></div>
+              <nav id="profiletabs">
+                <a href="#info" class="sel">Info</a>
+                <a href="#contributions">Contribution</a>
+                <a href="#settings">Settings</a>
+              </nav>
+              <div class="clearfix"></div>
+              <section id="info">
+                <ul class="show-hide max-height">
+                  <li>
+                    <i class="more bottom-right open-1"></i>
+                    <div class="desc-column"> 
+                      <span class="title color-red">Information:</span>
+                      <p class="desc"> 
+                        Can't a guy call his mother pretty without it seeming strange? Amen. I think that's one of Mom's little fibs, you know, like I'll sacrifice anything for my children.She's always got to wedge herself in the middle of us so that she can control everything. Yeah. Mom's awesome. I run a pretty tight ship around here. With a pool table. 
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </section>
+              <section id="contributions" class="hidden">
+                <ul id="contributionslist" class="show-hide max-height">
+                  <li>
+                    <i class="more bottom-right open-1"></i>
+                    <div class="desc-column"> 
+                      <span class="title color-red">Contributions List:</span>
+                      <p class="desc"> Once upon a time there was a pink elephant named jenny. She enjoyed walking around town until one day she came across a turtle. This turtle was not very nice to her and demanded for the elephant to hand over her money. </p>
+                    </div>
+                  </li>
+                </ul>
+              </section>
+              
+              <section id="settings" class="hidden">
+                <ul id="contributionslist" class="show-hide max-height">
+                  <li>
+                    <i class="more bottom-right open-1"></i>
+                    <div class="desc-column"> 
+                      <span class="title color-red">Edit your user settings:</span>
+                      <p class="desc"> E-mail: sreynak.chet@gmail.com <img src="images/edit.png" alt="*Edit*"></p>
+                    </div>
+                  </li>
+                </ul>
+              </section>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <footer>
+      <div class="copyright">© Copyright 2013, All Rights Reserved  My Company Ltd.</div>
+    </footer>
+  </body>
+</html>
