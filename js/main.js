@@ -81,9 +81,10 @@ $('.close-3').on('click',function(){
     $slideMenu = $("#slideMenu")
 
     $('#nav-button').on('click', function () {
+        $('#nav-button').css({ 'transform':'rotate(90deg)', 'transition-duration': '0.7s'})
         $('#main, header#logo, footer').css({
                 'left':'0',
-                'transition' : 'all 0.5s ease-out'
+                'transition' : 'all 0.5s ease-out',
         })
         if (($slideMenu).is(':visible')) {
             $('.theFixed').remove()
@@ -95,13 +96,14 @@ $('.close-3').on('click',function(){
                 'left':'0',
                 'transition' : 'all 0.5s ease-out'
             })
+            $('#nav-button').css({ 'transform':'rotate(-0deg)', 'transition-duration': '0.7s'})
         } else {
             $('<div class=theFixed></div>').insertAfter('#main');
             $('html, body').css({
                 'overflow': 'hidden'
             });
             $slideMenu.css({'z-index':'0','display':'block'});
-			$('#main, header#logo, footer, .theFixed').css({
+            $('#main, header#logo, footer, .theFixed').css({
                 'left':'-250px',
             })
         }
