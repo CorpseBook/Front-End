@@ -118,7 +118,8 @@ $('.close-3').on('click',function(){
     $('.tabs').find('.tab').css({'display':'none'})
     displayFirstTab()
 
-    $('body').on('click', '.tabs #centeredmenu a', function(){
+    $('body').on('click', '.tabs #centeredmenu a', function(e){
+        e.preventDefault();
         var contentId = $(this).attr('href')
         $(this).parents("#centeredmenu").find('a').removeClass('active')
         $(this).parents('.tabs').find('.tab').css({'display':'none'})
