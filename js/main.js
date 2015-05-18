@@ -121,6 +121,7 @@ $('.close-3').on('click',function(){
     displayFirstTab()
 
     $('body').on('click', '.tabs #centered-menu .active1 a', function(){
+        e.preventDefault();
         var contentId = $(this).attr('href')
         $(this).parents("#centered-menu").find('.active1 a').removeClass('active')
         $(this).parents('.tabs').find('.tab').css({'display':'none'})
