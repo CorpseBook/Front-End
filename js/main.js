@@ -120,9 +120,16 @@ $('.close-3').on('click',function(){
     $('.tabs').find('.tab').css({'display':'none'})
     displayFirstTab()
 
-    $('body').on('click', '.tabs #centered-menu a', function(){
+    $('body').on('click', '.tabs #centered-menu .active1 a', function(){
         var contentId = $(this).attr('href')
-        $(this).parents("#centered-menu").find('a').removeClass('active')
+        $(this).parents("#centered-menu").find('.active1 a').removeClass('active')
+        $(this).parents('.tabs').find('.tab').css({'display':'none'})
+        $(this).addClass('active')
+        $(contentId).css({'display':'block'})
+    })
+    $('body').on('click', '.tabs #centered-menu .active2 a', function(){
+        var contentId = $(this).attr('href')
+        $(this).parents("#centered-menu").find('.active2 a').removeClass('active')
         $(this).parents('.tabs').find('.tab').css({'display':'none'})
         $(this).addClass('active')
         $(contentId).css({'display':'block'})
