@@ -377,7 +377,6 @@ article p {
 .post-wrapper ul li span.title {
 	padding-top: 0.4em;
 	display: table-cell;
-	text-transform:uppercase
 }
 .post-wrapper ul li span.title + span {
 	display: table-cell;
@@ -392,7 +391,7 @@ article p {
 .post-wrapper ul .left-column {
 	width:30%;
 	max-width:100px;
-	float:left;
+	float:right;
 }
 .post-wrapper ul .desc-column {
 	padding:0 0 0.5em 1em;
@@ -402,9 +401,7 @@ article p {
 	width:100%;
 	height:auto;
 }
-.post-wrapper ul .desc-column span.title {
-	text-transform: uppercase;
-}
+
 .post-wrapper ul .desc-column .desc, .photoFrame p.desc {
 	display:block;
 	margin-top:0.5em;

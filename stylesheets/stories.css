@@ -62,7 +62,7 @@ section.button-group {
 	padding: 6px 10px 8px 10px;
 }
 
-.wrap { width: 100%; margin-top: 5px; }
+.wrap { width: 100%;}
 .pull-left { float: left; }
 .pull-right { float: right; }
 .clear { clear: both; }
@@ -81,30 +81,28 @@ ul.show-hide > li > div.desc-column > p.desc {
 /* Tab Menu */
 .tabs { padding-top: 10px; }
 #centered-menu {
-   float:left;
+   margin: 0 auto;
    width:100%;
-   background:#fff;
    overflow:hidden;
    position:relative;
+   max-width: 1119px;
 }
 #centered-menu ul {
-  display: inline-block;
+   display: inline-block;
    list-style:none;
    margin:0;
    padding:0;
-   position:relative;
    left:50%;
    text-align:center;
 }
 #centered-menu ul li {
-  width:255px;
+   width:278px;
    display:block;
    float:left;
    list-style:none;
    margin:0;
-   padding:0;
-   position:relative;
-   right:50%;
+   padding-top:5px;
+   background: #FFFFFF;
 }
 
 #centered-menu ul li#completed a,
@@ -140,6 +138,9 @@ ul.show-hide > li > div.desc-column > p.desc {
    background:#4FC3F7;
 
 }
+.post-wrapper ul li{
+  border-radius: 0 !important;
+}
 
 /* End tab menu */
 
@@ -152,4 +153,21 @@ ul.show-hide > li > div.desc-column > p.desc {
 
 @media only screen and (max-width: 460px) {
 	.search-container { left: 23%; }
+}
+@media only screen and (max-width: 610px) {
+  #centered-menu {
+    max-width:280px !important;
+  }
+  #centered-menu ul li#completed a,
+  #centered-menu ul li#uncompleted a,
+  #centered-menu ul li#map a,
+  #centered-menu ul li#list a {
+    border-radius: 10px 10px 10px 10px !important;
+    border:2px solid #4FC3F7;
+  }
+}
+@media only screen and (max-width: 1170px){
+  #centered-menu {
+    max-width:570px;
+  }
 }
