@@ -32,10 +32,10 @@
 	box-shadow: 0 1px 3px rgba(0,0,0,0.4);
 }
 
-
 /** profile nav links **/
 
-#profiletabs a { 
+#profiletabs a {
+    margin-left: 10px;
   	display: block;
   	float: left;
   	padding: 8px 5px;
@@ -59,9 +59,9 @@
 
 #profiletabs a.sel {
   	background: #fff;
-  	border-top-color: #d1cdb5; 
-  	border-left-color: #d1cdb5; 
-  	border-right-color: #d1cdb5; 
+  	border-top-color: #d1cdb5;
+  	border-left-color: #d1cdb5;
+  	border-right-color: #d1cdb5;
 }
 
 .hidden {

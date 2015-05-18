@@ -20,17 +20,17 @@ section.button-group {
 }
 
 .btn{
-	border:1px solid #d1dcdf; 
-	-webkit-border-radius: 3px; 
+	border:1px solid #d1dcdf;
+	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
 	font-size:15px;
-	font-family:arial, helvetica, sans-serif; 
-	padding: 10px 10px 10px 10px; 
-	text-decoration:none; 
+	font-family:arial, helvetica, sans-serif;
+	padding: 10px 10px 10px 10px;
+	text-decoration:none;
 	display:inline-block;
 	color: #D94436;
-	background-color: #f2f5f6; 
+	background-color: #f2f5f6;
 	background-image: -webkit-gradient(linear, left top, left bottom, from(#f2f5f6), to(#c8d7dc));
 	background-image: -webkit-linear-gradient(top, #f2f5f6, #c8d7dc);
 	background-image: -moz-linear-gradient(top, #f2f5f6, #c8d7dc);
@@ -41,7 +41,7 @@ section.button-group {
 
 .btn:hover{
 	border:1px solid #b6c7cc;
-	background-color: #d4dee1; 
+	background-color: #d4dee1;
 	background-image: -webkit-gradient(linear, left top, left bottom, from(#d4dee1), to(#a9c0c8));
 	background-image: -webkit-linear-gradient(top, #d4dee1, #a9c0c8);
 	background-image: -moz-linear-gradient(top, #d4dee1, #a9c0c8);
@@ -80,17 +80,15 @@ ul.show-hide > li > div.desc-column > p.desc {
 
 /* Tab Menu */
 .tabs { padding-top: 10px; }
-#centeredmenu {
+#centered-menu {
    float:left;
    width:100%;
    background:#fff;
-   border-bottom:4px solid #000;
    overflow:hidden;
    position:relative;
 }
-#centeredmenu ul {
-   clear:left;
-   float:left;
+#centered-menu ul {
+  display: inline-block;
    list-style:none;
    margin:0;
    padding:0;
@@ -98,7 +96,8 @@ ul.show-hide > li > div.desc-column > p.desc {
    left:50%;
    text-align:center;
 }
-#centeredmenu ul li {
+#centered-menu ul li {
+  width:255px;
    display:block;
    float:left;
    list-style:none;
@@ -107,25 +106,41 @@ ul.show-hide > li > div.desc-column > p.desc {
    position:relative;
    right:50%;
 }
-#centeredmenu ul li a {
+
+#centered-menu ul li#completed a,
+#centered-menu ul li#uncompleted a,
+#centered-menu ul li#map a,
+#centered-menu ul li#list a { /* Added this for rounded edges tabs */
+   border:2px solid #4FC3F7;
    display:block;
-   margin:0 0 0 1px;
    padding:3px 10px;
-   background:#ddd;
    color:#000;
    text-decoration:none;
    line-height:1.3em;
 }
-#centeredmenu ul li a:hover {
-   background:#369;
+
+#centered-menu ul li#completed a,
+#centered-menu ul li#list a{
+  border-right:0px;
+  border-radius: 10px 0px 0px 10px;
+}
+
+#centered-menu ul li#uncompleted a,
+#centered-menu ul li#map a{
+  border-left:0px;
+  border-radius: 0px 10px 10px 0px;
+}
+
+#centered-menu ul li a:hover {
    color:#fff;
 }
-#centeredmenu ul li a.active,
-#centeredmenu ul li a.active:hover {
-   color:#fff;
-   background:#000;
-   font-weight:bold;
+#centered-menu ul li a.active,
+#centered-menu ul li a.active:hover {
+   color:#fff !important;
+   background:#4FC3F7;
+
 }
+
 /* End tab menu */
 
 @media only screen and (max-width: 767px) {
