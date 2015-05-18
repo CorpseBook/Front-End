@@ -120,9 +120,9 @@ $('.close-3').on('click',function(){
     $('.tabs').find('.tab').css({'display':'none'})
     displayFirstTab()
 
-    $('body').on('click', '.tabs #centeredmenu a', function(){
+    $('body').on('click', '.tabs #centered-menu a', function(){
         var contentId = $(this).attr('href')
-        $(this).parents("#centeredmenu").find('a').removeClass('active')
+        $(this).parents("#centered-menu").find('a').removeClass('active')
         $(this).parents('.tabs').find('.tab').css({'display':'none'})
         $(this).addClass('active')
         $(contentId).css({'display':'block'})
