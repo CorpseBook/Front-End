@@ -62,7 +62,7 @@ section.button-group {
 	padding: 6px 10px 8px 10px;
 }
 
-.wrap { width: 100%; margin-top: 5px; }
+.wrap { width: 100%;}
 .pull-left { float: left; }
 .pull-right { float: right; }
 .clear { clear: both; }
