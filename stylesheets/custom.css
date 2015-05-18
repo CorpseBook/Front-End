@@ -44,7 +44,8 @@ html {
 
 /* --------------------------- HTML & BODY ------------------------------*/
 body {
-	font-family: 'Dosis';
+	font-family: "Lato";
+  font-weight: 300;
 	margin:0 auto;
 	color:#646464;
 	width:100%;
@@ -62,7 +63,7 @@ body {
 header {
 	border-bottom: 1px solid #CCCCCC;
 	height:50px; line-height:50px;
-	background-color:#28efcb;
+	background-color:#4FC3F7;
 	position:relative;
 	overflow:hidden;
 	padding:0.5em 0 0.5em 0
@@ -195,12 +196,13 @@ header input[type="submit"]:hover {
 	font-family: "Lato";
 	font-weight: 300;
 	display:block;
-	padding:1.25em 0;
+	padding:1.25em 0em;
 }
 
 #slideMenu li:hover {
-	background:#28efcb;
+	background:#4FC3F7;
 	opacity:0.4;
+	color:#FFFFFF;
 }
 #slideMenu ul li i {
 	max-width:2em;
@@ -354,7 +356,7 @@ article p {
 	background-clip: padding-box;
 	position:relative;
 	zoom:1;
-	border-radius: 15px;
+	border-radius: 10px;
 }
 .post-wrapper ul li:after {
 	content: ".";
@@ -405,7 +407,7 @@ article p {
 	margin-top:0.5em;
 	padding:0;
 	word-wrap:break-word;
-	overflow:hidden
+	overflow:hidden;
 }
 
 .show-hide li .desc {
@@ -538,7 +540,7 @@ article p {
 
 	#slideMenu ul li span {
 		display:block;
-		padding:1.40em 0;
+		padding:1.40em 0.5em;
 	}
 
 }

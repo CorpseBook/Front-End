@@ -108,37 +108,38 @@ ul.show-hide > li > div.desc-column > p.desc {
    right:50%;
 }
 #centeredmenu ul li#completed a { /* Added this for rounded edges tabs */
-  border-radius: 10px 0px 0px 10px;
+   border-radius: 10px 0px 0px 10px;
+   border:2px solid #4FC3F7;
+   border-right:0px;
    display:block;
-   margin:0 0 0 1px;
    padding:3px 10px;
-   background:#ddd;
    color:#000;
    text-decoration:none;
    line-height:1.3em;
 }
 
 #centeredmenu ul li#uncompleted a { /* Added this for rounded edges tabs */
-  border-radius: 0px 10px 10px 0px;
+   border-radius: 0px 10px 10px 0px;
+   border-left:0px;
+   border:2px solid #4FC3F7;
    display:block;
-   margin:0 0 0 1px;
    padding:3px 10px;
-   background:#ddd;
-   color:#000;
+   color:#000000;
    text-decoration:none;
    line-height:1.3em;
 }
 
 #centeredmenu ul li a:hover {
-   background:#369;
    color:#fff;
 }
 #centeredmenu ul li a.active,
 #centeredmenu ul li a.active:hover {
-   color:#fff;
-   background:#000;
-   font-weight:bold;
+   color:#fff !important;
+   background:#4FC3F7;
+
 }
+
+
 /* End tab menu */
 
 @media only screen and (max-width: 767px) {
