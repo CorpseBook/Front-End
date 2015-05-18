@@ -82,6 +82,9 @@ header #nav-button {
 header .logo {
 	padding-left:0.5em;
 }
+header .logo img{
+	width: 50px;
+}
 header .logo span{ position:absolute;  white-space:nowrap; padding-left:0.5px; color:#999; font-family: 'Lato'; }
 
 /* ------------ Search Bar ------------------*/

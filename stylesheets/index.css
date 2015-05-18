@@ -10,12 +10,14 @@
     margin: 0;
 }
 
-body,#main {
+body, #main {
     background:#4FC3F7 !important;
 }
+
 .content-wrapper{
     padding: 4em !important;
 }
+
 .logo-book-icon h1 {
     padding: 0px !important;
 }
@@ -23,7 +25,9 @@ body,#main {
 .logo-book-icon img{
     padding: 10px;
     margin: 0 auto;
+    width: 200px
 }
+
 .user-form {
     width: 500px;
     margin: 0px auto 30px;
@@ -34,13 +38,8 @@ body,#main {
     color: #4FC3F7;
 }
 
-
-.user-form h1 {
-    font-weight: bold;
-    color: #4FC3F7;
-}
-
 .user-form h1 .sign-in {
+    font-weight: bold;
     color: #4FC3F7;
     padding-right: 2px;
     display: inline-block;
@@ -54,14 +53,6 @@ body,#main {
     border-top: 1px solid rgba(255,255,255,1);
 }
 
-.user-form .float:first-of-type {
-    padding-right: 5px;
-}
-
-.user-form .float:last-of-type {
-    padding-left: 5px;
-}
-
 .user-form label {
     display: block;
     padding: 0 0 5px 2px;
@@ -70,12 +61,6 @@ body,#main {
     font-weight: 400;
     text-shadow: 0 1px 0 rgba(255,255,255,0.8);
     font-size: 12px;
-}
-
-.user-form label i {
-    margin-right: 5px;
-    display: inline-block;
-    width: 10px;
 }
 
 .user-form input[type=text],
@@ -139,7 +124,6 @@ body,#main {
     text-shadow: 0 1px rgba(255,255,255,0.3);
 }
 
-
 .user-form input[type=submit]:hover,
 .user-form .sign-facebook:hover {
     box-shadow:
@@ -152,27 +136,12 @@ body,#main {
     top: 1px;
 }
 
-.user-form p:last-of-type {
-    clear: both;
-}
-
-.user-form .opt {
-    text-align: right;
-    margin-right: 3px;
-}
-
-.user-form label[for=showPassword] {
-    display: inline-block;
-    margin-bottom: 10px;
-}
-
-.user-form input[type=checkbox] {
-    vertical-align: middle;
-    margin: -1px 5px 0 1px;
-}
-
 .clearfix {
     padding-top: 10px;
+}
+
+.register-title a{
+    color: #4FC3F7;
 }
 
 @media only screen and (max-width: 575px){

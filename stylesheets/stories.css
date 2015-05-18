@@ -80,17 +80,15 @@ ul.show-hide > li > div.desc-column > p.desc {
 
 /* Tab Menu */
 .tabs { padding-top: 10px; }
-#centeredmenu {
+#centered-menu {
    float:left;
    width:100%;
    background:#fff;
-   /*border-bottom:1px solid #CCCCCC;*/ /* Commented this out for no under border */
    overflow:hidden;
    position:relative;
 }
-#centeredmenu ul {
-   clear:left;
-   float:left;
+#centered-menu ul {
+  display: inline-block;
    list-style:none;
    margin:0;
    padding:0;
@@ -98,7 +96,8 @@ ul.show-hide > li > div.desc-column > p.desc {
    left:50%;
    text-align:center;
 }
-#centeredmenu ul li {
+#centered-menu ul li {
+  width:255px;
    display:block;
    float:left;
    list-style:none;
@@ -107,10 +106,12 @@ ul.show-hide > li > div.desc-column > p.desc {
    position:relative;
    right:50%;
 }
-#centeredmenu ul li#completed a { /* Added this for rounded edges tabs */
-   border-radius: 10px 0px 0px 10px;
+
+#centered-menu ul li#completed a,
+#centered-menu ul li#uncompleted a,
+#centered-menu ul li#map a,
+#centered-menu ul li#list a { /* Added this for rounded edges tabs */
    border:2px solid #4FC3F7;
-   border-right:0px;
    display:block;
    padding:3px 10px;
    color:#000;
@@ -118,27 +119,27 @@ ul.show-hide > li > div.desc-column > p.desc {
    line-height:1.3em;
 }
 
-#centeredmenu ul li#uncompleted a { /* Added this for rounded edges tabs */
-   border-radius: 0px 10px 10px 0px;
-   border-left:0px;
-   border:2px solid #4FC3F7;
-   display:block;
-   padding:3px 10px;
-   color:#000000;
-   text-decoration:none;
-   line-height:1.3em;
+#centered-menu ul li#completed a,
+#centered-menu ul li#list a{
+  border-right:0px;
+  border-radius: 10px 0px 0px 10px;
 }
 
-#centeredmenu ul li a:hover {
+#centered-menu ul li#uncompleted a,
+#centered-menu ul li#map a{
+  border-left:0px;
+  border-radius: 0px 10px 10px 0px;
+}
+
+#centered-menu ul li a:hover {
    color:#fff;
 }
-#centeredmenu ul li a.active,
-#centeredmenu ul li a.active:hover {
+#centered-menu ul li a.active,
+#centered-menu ul li a.active:hover {
    color:#fff !important;
    background:#4FC3F7;
 
 }
-
 
 /* End tab menu */
 
