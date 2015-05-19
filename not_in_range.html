@@ -9,8 +9,8 @@
     <link href="stylesheets/custom.css" rel="stylesheet" type="text/css">
     <link href="stylesheets/contribution.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="stylesheets/stories.css">
-    <!-- <link rel="stylesheet" type="text/css" href="stylesheets/new_story.css"> -->
     <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/not_in_range.css">
     <link href='http://fonts.googleapis.com/css?family=Playfair+Display+SC' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="stylesheets/idangerous.swiper.css">
     <script src="js/vendor/jquery-2.0.3.min.js"></script>
@@ -19,6 +19,7 @@
     <script src="js/jquery.fittext.js"></script>
     <script src="js/main.js"></script>
     <script src="js/new_story.js"></script>
+    <title>Not in range</title>
   </head>
   <body>
     <nav id="slideMenu">
@@ -38,6 +39,10 @@
       </ul>
     </nav>
     <header id="logo">
+      <div class="search-container">
+        <input id="search" name="search" type="text" placeholder="">
+        <input id="search_submit" value="" type="submit">
+      </div>
       <div id="nav-button"></div>
       <div class="logo">
         <img src="images/bookicon.png">
@@ -50,43 +55,20 @@
             <ul class="max-height">
               <li>
                 <div class="desc-column">
-                  <span id="story-title" class="title color-red">New Story</span>
-                </div>
-                <div class="desc-column">
-                  <form method="POST" action="#" class="frm form-control">
-                    <div class="group-form">
-                      <div class="cell-5 pull-left">
-                        <input type="tex" name="story[title]" class="input-form" placeholder="Title of story" />
-                      </div>
-                      <div class="cell-5 pull-right">
-                        <p>Location</p>
-                      </div>
-                      <div class='clear'></div>
-                    </div>
-                    <div class="group-form">
-                      <textarea cols="15" name="story[content]" placeholder="First Contribution" rows="5"></textarea>
-                    </div>
-                    <div class="group-form">
-                      <div class="form-control label-title">
-                        <label>Contribution Limit:</label>
-                      </div>
-                      <div class="form-control cell-5">
-                        <input type="hidden" name="story[contribution_limit]" />
-                        <div id="slider">
-                          <a class="ui-slider-handle" href="#" style="left: 0%;">
-                            <label>
-                              <span class="row-left"></span> 0 <span class="row-right"></span>
-                            </label>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="group-form">
-                      <div class="form-control">
-                        <button class="btn-contribution" type="submite">Create</button>
-                      </div>
-                    </div>
-                  </form>
+                  <div class="err">
+	            	<div class="err-title">
+	            		<h2>Not in Range!</h2>
+	            	</div>
+	            	<div class="err-content">
+	            		<section class="message"><p>Sorry, you're not close enough to this story to contribute!</p></section>
+	            		<section class="emotion">
+	            			<img alt="I'm Sorry" src="images/sad.png">
+	            		</section>
+	            	</div>
+	            	<div class="err-btn">
+	            		<a href="stories.html"><button class="btn-contribution">OK</button></a>
+	            	</div>
+	            </div>
                 </div>
               </li>
             </ul>
