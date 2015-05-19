@@ -12,50 +12,50 @@ $(".main").fitText(1.5, { minFontSize: '16px', maxFontSize: '60px' });
         $(this).addClass('clicked');
     })
 
-$('.close-3').on('click',function(){
+// $('.close-3').on('click',function(){
 
-	$(this).parent('div').animate({
-		opacity :0
-	},function()
-	{
-	$(this).remove();
-	});
+// 	$(this).parent('div').animate({
+// 		opacity :0
+// 	},function()
+// 	{
+// 	$(this).remove();
+// 	});
 
-});
+// });
 
-    $('.show-hide li').toggle(function () {
+//     $('.show-hide li').toggle(function () {
 
-        var $default = $(this).parent().attr('class');
-        $classStr = $(this).find('.more').attr('class');
+//         var $default = $(this).parent().attr('class');
+//         $classStr = $(this).find('.more').attr('class');
 
-        if ($default.indexOf('max-height') !== -1) {
-            $(this).find('.disable').removeClass('hide')
-            $(this).find('.desc').css('max-height', 'inherit');
-        } else {
-            $(this).find('.desc:hidden').slideDown();
-        }
+//         if ($default.indexOf('max-height') !== -1) {
+//             $(this).find('.disable').removeClass('hide')
+//             $(this).find('.desc').css('max-height', 'inherit');
+//         } else {
+//             $(this).find('.desc:hidden').slideDown();
+//         }
 
-        $lastClass = $classStr.substr($classStr.lastIndexOf(' ') + 1).split('-')[1];
-        $(this).find('.more').removeClass('open-' + $lastClass).addClass('close-' + $lastClass);
+//         $lastClass = $classStr.substr($classStr.lastIndexOf(' ') + 1).split('-')[1];
+//         $(this).find('.more').removeClass('open-' + $lastClass).addClass('close-' + $lastClass);
 
-        if ($('.more').is(':visible')) {
-            $('html, body').animate({
-                scrollTop: $(this).offset().top
-            }, 0);
-        }
-    }, function () {
+//         if ($('.more').is(':visible')) {
+//             $('html, body').animate({
+//                 scrollTop: $(this).offset().top
+//             }, 0);
+//         }
+//     }, function () {
 
-        var $default = $(this).parent().attr('class');
+//         var $default = $(this).parent().attr('class');
 
-        if ($default.indexOf('max-height') !== -1) {
-            $(this).find('.desc').css('max-height', '3.6em');
-            $(this).find('.disable').addClass('hide')
-        } else {
-            $(this).find('.desc:visible').slideUp();
-        }
+//         if ($default.indexOf('max-height') !== -1) {
+//             $(this).find('.desc').css('max-height', '3.6em');
+//             $(this).find('.disable').addClass('hide')
+//         } else {
+//             $(this).find('.desc:visible').slideUp();
+//         }
 
-        $(this).find('.more').removeClass('close-' + $lastClass).addClass('open-' + $lastClass);
-    });
+//         $(this).find('.more').removeClass('close-' + $lastClass).addClass('open-' + $lastClass);
+//     });
 
         function boxResize() {
             _height = $(window).height();
@@ -121,7 +121,6 @@ $('.close-3').on('click',function(){
     displayFirstTab()
 
     $('body').on('click', '.tabs #centered-menu .active1 a', function(){
-        e.preventDefault();
         var contentId = $(this).attr('href')
         $(this).parents("#centered-menu").find('.active1 a').removeClass('active')
         $(this).parents('.tabs').find('.tab').css({'display':'none'})
