@@ -120,14 +120,16 @@ $(".main").fitText(1.5, { minFontSize: '16px', maxFontSize: '60px' });
     $('.tabs').find('.tab').css({'display':'none'})
     displayFirstTab()
 
-    $('body').on('click', '.tabs #centered-menu .active1 a', function(){
+    $('body').on('click', '.tabs #centered-menu .active1 a', function(e){
+        e.preventDefault();
         var contentId = $(this).attr('href')
         $(this).parents("#centered-menu").find('.active1 a').removeClass('active')
         $(this).parents('.tabs').find('.tab').css({'display':'none'})
         $(this).addClass('active')
         $(contentId).css({'display':'block'})
     })
-    $('body').on('click', '.tabs #centered-menu .active2 a', function(){
+    $('body').on('click', '.tabs #centered-menu .active2 a', function(e){
+        e.preventDefault();
         var contentId = $(this).attr('href')
         $(this).parents("#centered-menu").find('.active2 a').removeClass('active')
         $(this).parents('.tabs').find('.tab').css({'display':'none'})
