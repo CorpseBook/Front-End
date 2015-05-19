@@ -1,0 +1,23 @@
+li.ui-state-default
+{
+    /*background:#fff0;*/
+    border:none;
+    border-bottom:1px solid #ddd;
+    text-align: left;
+    padding-bottom: 10px !important;
+}
+li.ui-state-default:last-child
+{
+    border-bottom:none;
+}
+strong.primary-font 
+{
+  font-weight: 500;
+  color: #458CAB;
+}
+small.text-muted 
+{
+  font-style: italic;
+  font-size: 14px;
+  color: #777;
+}
