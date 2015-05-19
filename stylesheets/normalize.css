@@ -276,6 +276,7 @@ button,
 input,
 select,
 textarea {
+    font-weight: 300;
     font-family: inherit; /* 1 */
     font-size: 100%; /* 2 */
     margin: 0; /* 3 */

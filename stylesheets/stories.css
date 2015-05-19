@@ -6,8 +6,20 @@ body {
 	min-height: 100%;
 }
 .search-container {
-	right: 2%;
+	/*right: 2%;*/
 	left: 50%;
+  padding:10px 0 0 0;
+}
+
+.search-container input#search {
+  background:red;
+  width:40%;
+}
+
+.search-container input#search_submit {
+  background:blue;
+  height:30px;
+  width:10%;
 }
 
 section.button-group {
@@ -125,8 +137,12 @@ ul.show-hide > li > div.desc-column > p.desc {
 
 }
 .post-wrapper ul li{
+<<<<<<< HEAD
   border-radius: 0 !important;
   padding: 0 !important;
+=======
+  border-radius: 10px !important;
+>>>>>>> 07ff48e886b8e31d21cb9b6ad4cf2486eca6e803
 }
   .post-wrapper ul li span.title {
     padding-bottom: 10px;

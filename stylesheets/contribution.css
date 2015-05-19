@@ -9,6 +9,10 @@
 	float:left;
 }
 
+.content-wrapper {
+	padding: 1.8em !important;
+}
+
 .btn-contribution{
 	background:#4FC3F7;
 	border: 0 !important;

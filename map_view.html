@@ -7,10 +7,9 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <link rel="icon" type="image/x-icon" href="images/book-icon.gif">
     <link href="stylesheets/custom.css" rel="stylesheet" type="text/css">
-    <link href="stylesheets/contribution.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="stylesheets/stories.css">
     <link href='http://fonts.googleapis.com/css?family=Playfair+Display+SC' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="stylesheets/idangerous.swiper.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/stories.css">
     <script src="js/vendor/jquery-2.0.3.min.js"></script>
     <script src="js/vendor/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/jquery.fittext.js"></script>
@@ -40,27 +39,47 @@
       </div>
     </header>
     <section id="main">
-      <div class="content-wrapper">
+    <div class="content-wrapper">
+      <div class="tabs">
+        <div id="centered-menu">
+          <ul class="active1">
+            <li id='completed'><a href="#completed" class="active">Completed</a></li>
+            <li id='uncompleted'><a href="#uncompleted">Uncompleted</a></li>
+          </ul>
+          <ul class="active2">
+            <li id='list'><a href="#list" class="active">List</a></li>
+            <li id='map'><a href="#map">Map</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="clear"></div>
+
+      <div class="content-wrapper tab" role="tabable" id="completed">
         <article>
           <div class="post-wrapper noCursor">
-            <ul class="max-height">
+            <ul class="show-hide max-height">
               <li>
-                <div class="desc-column">
-                  <span id="story-title" class="title color-red">Title Of Story</span>
-                  <span class="title color-red location">Cambodia</span>
+                <i class="more bottom-left open-1"></i>
+                <div class="left-column">
+                  <div class="wrap">
+                  <!--   <img src="images/add-contribution.png" style="max-width:100px;"> -->
+                  </div>
                 </div>
                 <div class="desc-column">
-                  <p class="desc"> Once upon a time there was a pink elephant named jenny. She enjoyed walking around town until one day she came across a turtle. This turtle was not very nice to her and demanded for the elephant to hand over her money. </p>
-                  <form method="POST" action="#">
-                    <textarea cols="15" name="content" placeholder="Content" rows="5"></textarea>
-                    <button class="btn-contribution" type="submit">Contribution</button>
-                  </form>
+                  <div class="wrap">
+                    <div id="map-canvas"></div>
                 </div>
               </li>
+
             </ul>
           </div>
         </article>
       </div>
+
+      </div>
+
     </section>
   </body>
 </html>
+

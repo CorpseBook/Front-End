@@ -9,12 +9,17 @@
     <link href="stylesheets/custom.css" rel="stylesheet" type="text/css">
     <link href="stylesheets/contribution.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="stylesheets/stories.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/not_in_range.css">
     <link href='http://fonts.googleapis.com/css?family=Playfair+Display+SC' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="stylesheets/idangerous.swiper.css">
     <script src="js/vendor/jquery-2.0.3.min.js"></script>
     <script src="js/vendor/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
     <script src="js/jquery.fittext.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/new_story.js"></script>
+    <title>Not in range</title>
   </head>
   <body>
     <nav id="slideMenu">
@@ -34,6 +39,10 @@
       </ul>
     </nav>
     <header id="logo">
+      <div class="search-container">
+        <input id="search" name="search" type="text" placeholder="">
+        <input id="search_submit" value="" type="submit">
+      </div>
       <div id="nav-button"></div>
       <div class="logo">
         <img src="images/bookicon.png">
@@ -46,15 +55,20 @@
             <ul class="max-height">
               <li>
                 <div class="desc-column">
-                  <span id="story-title" class="title color-red">Title Of Story</span>
-                  <span class="title color-red location">Cambodia</span>
-                </div>
-                <div class="desc-column">
-                  <p class="desc"> Once upon a time there was a pink elephant named jenny. She enjoyed walking around town until one day she came across a turtle. This turtle was not very nice to her and demanded for the elephant to hand over her money. </p>
-                  <form method="POST" action="#">
-                    <textarea cols="15" name="content" placeholder="Content" rows="5"></textarea>
-                    <button class="btn-contribution" type="submit">Contribution</button>
-                  </form>
+                  <div class="err">
+	            	<div class="err-title">
+	            		<h2>Not in Range!</h2>
+	            	</div>
+	            	<div class="err-content">
+	            		<section class="message"><p>Sorry, you're not close enough to this story to contribute!</p></section>
+	            		<section class="emotion">
+	            			<img alt="I'm Sorry" src="images/sad.png">
+	            		</section>
+	            	</div>
+	            	<div class="err-btn">
+	            		<a href="stories.html"><button class="btn-contribution">OK</button></a>
+	            	</div>
+	            </div>
                 </div>
               </li>
             </ul>
