@@ -10,6 +10,7 @@
     <link href='http://fonts.googleapis.com/css?family=Playfair+Display+SC' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="stylesheets/idangerous.swiper.css">
     <link rel="stylesheet" type="text/css" href="stylesheets/stories.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/search.css">
     <script src="js/vendor/jquery-2.0.3.min.js"></script>
     <script src="js/vendor/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/jquery.fittext.js"></script>
@@ -18,14 +19,17 @@
   <body>
     <nav id="slideMenu">
       <ul>
-        <li onClick="window.location.href = 'index.html';">
-          <div class="right"><span>Home</span></div>
-        </li>
         <li onClick="window.location.href = 'stories.html';">
           <div class="right"><span>Stories</span></div>
         </li>
+        <li onClick="window.location.href = 'new_story.html';">
+          <div class="right"><span>Create Story</span></div>
+        </li>
         <li onClick="window.location.href = 'contribution.html';">
           <div class="right"><span>Contributions</span></div>
+        </li>
+        <li onClick="window.location.href = 'search.html';">
+          <div class="right"><span>Search By Location</span></div>
         </li>
         <li onClick="window.location.href = 'profile.html';">
           <div class="right"><span>Profile</span></div>
@@ -39,10 +43,21 @@
       </div>
     </header>
     <section id="main">
+
+    <!-- <div class="content-wrapper">
+      
+    </div> -->
+
     <div class="content-wrapper">
+      <!-- <div class="box tabs">
+        <div class="container-4">
+          <input type="search" id="search" placeholder="Search..." />
+          <button class="icon"><i class="fa fa-search"></i></button>
+        </div>
+      </div> -->
       <div class="tabs">
         <div id="centered-menu">
-          <div class="search-container">
+          <div class="search-container pull-right">
             <input id="search" name="search" type="text" placeholder="search bar">
             <input id="search_submit" value="" type="submit">
           </div>
