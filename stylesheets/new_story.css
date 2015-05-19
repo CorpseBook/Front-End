@@ -4,12 +4,17 @@ input.input-form {
   box-shadow: none;
   border-color: #ccc;
   height: 25px;
-  border: 1px solid #7ac9b7;
+  border: 1px solid #4FC3F7;
   transition: all 0.1s linear;
   width: 94%;
   line-height: 1.42857143;
   padding: 6px 15px;
   background-color: #fff;
+}
+
+.btn-contribution{
+  width:150px !important;
+  float: right;
 }
 
 form.form-control {
@@ -49,7 +54,7 @@ form.frm > .group-form:last-child {
 }
 
 .ui-slider .ui-slider-handle label {
-  background: #428bca;
+  background: #4FC3F7;
   border-radius: 20px;
   cursor: pointer;
   width: 4.2em;

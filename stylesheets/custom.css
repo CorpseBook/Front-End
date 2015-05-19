@@ -88,7 +88,7 @@ header .logo img{
 header .logo span{ position:absolute;  white-space:nowrap; padding-left:0.5px; color:#999; font-family: 'Lato'; }
 
 /* ------------ Search Bar ------------------*/
-#search {
+/*#search {
 	width:50%;
 }
 
@@ -153,7 +153,7 @@ header input[type="submit"] {
 
 header input[type="submit"]:hover {
   opacity: 0.8;
-}
+}*/*/*/
 
 /* --------------------------- Slide Menu (Right Menu)------------------------------*/
 #slideMenu {
@@ -257,7 +257,7 @@ section#main {
 }
 .content-wrapper {
 	position:relative;
-	padding:1em
+	padding: 1em;
 }
 article {
 	display:block;
@@ -375,7 +375,7 @@ article p {
     width: 100%;
 }
 .post-wrapper ul li span.title {
-	padding-top: 0.4em;
+	padding-top: 1em;
 	display: table-cell;
 }
 .post-wrapper ul li span.title + span {
