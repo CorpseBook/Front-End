@@ -105,7 +105,6 @@ header .logo span{ position:absolute;  white-space:nowrap; padding-left:0.5px; c
 	overflow-y: auto;
 	z-index:0;
 }
-
 .theFixed {
 	position:fixed;
 	left:0;
@@ -116,20 +115,17 @@ header .logo span{ position:absolute;  white-space:nowrap; padding-left:0.5px; c
 	background-color:#fff;
 	opacity:0.6;
 }
-
 #slideMenu .left{
 	width:20%; float:left
 }
 #slideMenu .right{
 	width:80%; float:left
 }
-
 #slideMenu ul li {
 	border-bottom:#CCCCCC solid 1px;
 	overflow:hidden;
 	cursor:pointer
 }
-
 #slideMenu ul li:last-child {
 	border-bottom:none
 }
@@ -139,7 +135,6 @@ header .logo span{ position:absolute;  white-space:nowrap; padding-left:0.5px; c
 	display:block;
 	padding:1.25em 0em;
 }
-
 #slideMenu li:hover {
 	background:#4FC3F7;
 	opacity:0.4;
@@ -168,7 +163,6 @@ header .logo span{ position:absolute;  white-space:nowrap; padding-left:0.5px; c
 	background-color:#fff;
 	z-index:99;
 }
-
 #status {
 	width:200px;
 	height:200px;
@@ -179,15 +173,14 @@ header .logo span{ position:absolute;  white-space:nowrap; padding-left:0.5px; c
 	background-repeat:no-repeat;
 	background-position:center;
 	margin:-100px 0 0 -100px;
-
 }
 
 /* --------------------------- General Layout & Fonts ------------------------------*/
 hr{
-border: none;
-border-top: 1px solid #EBEBEB;
-margin: 0.8em auto 0.8em auto;
-width: 100%;
+	border: none;
+	border-top: 1px solid #EBEBEB;
+	margin: 0.8em auto 0.8em auto;
+	width: 100%;
 }
 a {
 	text-decoration:none;
@@ -219,7 +212,7 @@ article {
 	width:50%;
 	float:left;
 	padding:1%;
-		-webkit-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 
@@ -241,12 +234,10 @@ article header h2, article header h3 {
 	font-weight:bold;
 	color:#555555;
 }
-
 article header {
 	height:auto;
 	background-color:#FFF
 }
-
 span.hightLight
 {
 	color: #fff;
@@ -254,7 +245,6 @@ span.hightLight
 	padding: 0.1em 0.4em;
 	text-shadow: none;
 }
-
 span.post-date {
 	font-weight:normal;
 	padding-left:1em;
@@ -290,7 +280,6 @@ article p {
 	width: 100%;
 	margin-left: auto;
   margin-right: auto;
-
 }
 .post-wrapper:first-child {
 	margin-top:0
@@ -344,7 +333,6 @@ article p {
 	width:100%;
 	height:auto;
 }
-
 .post-wrapper ul .desc-column .desc, .photoFrame p.desc {
 	display:block;
 	margin-top:0.5em;
@@ -352,7 +340,6 @@ article p {
 	word-wrap:break-word;
 	overflow:hidden;
 }
-
 .show-hide li .desc {
 	display:none
 }
@@ -391,7 +378,6 @@ article p {
 }
 /**** disabling Isotope CSS3 transitions ****/
 
-
 .isotope.no-transition, .isotope.no-transition .isotope-item, .isotope .isotope-item.no-transition {
 	-webkit-transition-duration: 0s;
 	-moz-transition-duration: 0s;
@@ -417,11 +403,9 @@ article p {
 #filters li a.selected {
 	background-color:#34abff
 }
-
 #container {
 	-overflow:visible !important;
 }
-
 .box {
 	height: auto;
 	margin-bottom: 2%;
@@ -475,21 +459,17 @@ article p {
 	i.more.close-1 {
 		background:url(../images/dark/close-1.png) no-repeat;
 	}
-
 	.search-container{
   width: 65%;
 	background-color: red;
 	}
-
 	#slideMenu ul li span {
 		display:block;
 		padding:1.40em 0.5em;
 	}
-
 	#map-canvas {
 		height:250px;
 	}
-
 }
 
 /* --------------------------- Tablets ------------------------------*/
@@ -513,11 +493,9 @@ article p {
 	#slideMenu ul li span {
 		padding-left:0.3em
 	}
-
 	#map-canvas {
 		height:300px;
 	}
-
 }
 										/* --------------------------- Hi-Res / Desktop ------------------------------*/
 
