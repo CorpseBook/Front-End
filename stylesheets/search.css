@@ -16,7 +16,6 @@
 #centered-menu .search-container input#search_submit {
   border: none;
   background-color: #ccc;
-  /*background-color: #fff;*/
   background-image: url("../images/search.png");
   padding: 8px;
   height: 36px;
