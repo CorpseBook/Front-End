@@ -20,3 +20,9 @@
   cursor: pointer;
   margin: $unit*3 0 0 $unit*3;
 }
+
+@mixin bg-image-option {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 65%;
+}

@@ -1,0 +1,79 @@
+#centered-menu {
+	.search-container {
+		width: 46%;
+		padding-top: 0px;
+		background: $grey-light;
+		border-radius: 10px;
+		margin-top: 5px;
+		height: 38px;
+		@media only screen and (max-width: 1170px) {
+			width: 97%;
+    		margin: 2px 15px;
+		}
+		@media only screen and (max-width: 610px) {
+			width: 98%;
+    		margin: 2px 5px;
+		}
+		input#search {
+			width: 85%;
+			background-color: $grey-light;
+			border-radius: 10px;
+			border: none;
+			padding: 9px 0 5px 10px;
+			&:focus {
+				border-radius: 9px 0 0 9px;
+				background: $grey-light-dark;
+				color: $black-mid-dark;
+				outline: 0;
+				padding: 9px 0 5px 10px;
+				@media only screen and (max-width: 445px) {
+					padding: 9px 0 8px 10px;
+				}
+				@media only screen and (max-width: 424px) {
+					padding: 9px 0 9px 10px;
+				}
+				@media only screen and (max-width: 360px) {
+					padding: 10px 5px;
+				}
+			}
+			@media only screen and (max-width: 610px) {
+				width: 80%;
+			}
+		}
+		input#search_submit {
+			border: none;
+			background-color: $grey-light;
+			background-image: url("../images/search.png");
+			padding: 8px;
+			height: 36px;
+			@include bg-image-option;
+			@media only screen and (max-width: 1170px) {
+				background-size: 60%;
+			}
+			@media only screen and (max-width: 610px) {
+				background-size: 80%;
+			}
+			@media only screen and (max-width: 495px) {
+				height: 34px;
+			}
+			@media only screen and (max-width: 445px) {
+				padding: 9px;
+    			height: 33px;
+			}
+			@media only screen and (max-width: 424px) {
+				padding: 10px;
+			}
+			@media only screen and (max-width: 360px) {
+				padding: 11px;
+			}
+			@media only screen and (max-width: 320px) {
+				padding: 12px;
+			}
+		}
+	}
+}
+
+
+
+
+

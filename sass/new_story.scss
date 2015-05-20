@@ -1,0 +1,74 @@
+form.form-control {
+  margin: 0 0 10px 0;
+  padding-top: 1em;
+  input.input-form {
+    @include input-form;
+  }
+  .group-form:last-child {
+    margin-top: $unit*4;
+  }
+}
+
+.cell-9 {
+  width: 90%;
+}
+.cell-5 {
+  width: 49%;
+  @media only screen and (max-width: 870px) {
+    width: 47%;
+  }
+  @media only screen and (max-width: 500px) {
+    width: 96%;
+  }
+}
+
+.cell-5.pull-right > p {
+  @media only screen and (max-width: 500px) {
+    margin-left: -($unit+8);
+    padding: $unit*0.5 $unit*0.5 0 $unit*0.5;
+  }
+
+}
+
+#slider {
+  position: relative;
+}
+
+.ui-slider {
+  @media only screen and (max-width: 500px) {
+    width: 86.5%;
+  }
+  @include ui-slider;
+  a {
+    outline: none;
+    &:focus {
+      outline: none;
+    }
+  }
+  .ui-slider-handle {
+    position: absolute;
+    z-index: 2;
+    width: 5.2em;
+    margin: -18px -50px;
+    text-align: center;
+    line-height: $unit*3.5;
+    color: $white;
+    font-size: $unit*1.5;
+
+    label {
+      display: inline-block;
+      margin-bottom: $unit*0.5;
+      font-weight: 700;
+      background: $blue-light;
+      border-radius: $unit*2;
+      cursor: pointer;
+      width: 4.2em;
+    }
+  }
+}
+
+.row-left, .row-right {
+  color: $white;
+}
+
+
