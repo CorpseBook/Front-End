@@ -81,7 +81,7 @@ $(".main").fitText(1.5, { minFontSize: '16px', maxFontSize: '60px' });
     $slideMenu = $("#slideMenu")
 
     $('#nav-button').on('click', function () {
-        $('#nav-button').css({ 'transform':'rotate(90deg)', 'transition-duration': '0.7s'})
+        $('#nav-button').css({ 'transform':'rotate(180deg)', 'transition-duration': '0.7s'})
         $('#main, header#logo, footer').css({
                 'left':'0',
                 'transition' : 'all 0.5s ease-out',

@@ -129,14 +129,6 @@ span.pull-right.title.color-red.location {
 }
 /* End tab menu */
 
-
-
-
-/* ------------------------------------------------------------ *\
-|* ------------------------------------------------------------ *|
-|* Testing
-|* ------------------------------------------------------------ *|
-\* ------------------------------------------------------------ */
 .main-story .container-story {
   padding: 0 100px 0 0;
   overflow: hidden;
@@ -152,7 +144,7 @@ span.pull-right.title.color-red.location {
   float: left;
   width: 100%;
 }
-.sidebar {
+.contribution-button {
   padding-top: 10px;
   float: right;
   margin-right: -100px;
@@ -160,14 +152,14 @@ span.pull-right.title.color-red.location {
   background-color: #4FC3F7;
 }
 .content-story,
-.sidebar {
+.contribution-button {
   padding-bottom: 99999px;
   margin-bottom: -99999px;
 }
 section{
   padding: 20px;
 }
-.sidebar img{
+.contribution-button img{
   width: 80px;
 }
 
@@ -179,18 +171,18 @@ section{
   .content-story {
     float: none;
   }
-  .sidebar {
+  .contribution-button {
     float: none;
     margin-right: 0;
     width: 100%;
     background-color: #4FC3F7;
     border-radius: 0 0 10px 10px;
   }
-  .sidebar img{
+  .contribution-button img{
     width: 30px;
   }
   .content-story,
-  .sidebar {
+  .contribution-button {
     padding-bottom: 10px;
     margin-bottom: 0;
   }

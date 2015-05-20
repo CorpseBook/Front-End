@@ -61,7 +61,6 @@ body {
 }
 
 header {
-	border-bottom: 1px solid #CCCCCC;
 	height:50px; line-height:50px;
 	background-color:#4FC3F7;
 	position:relative;
@@ -72,7 +71,7 @@ header #nav-button {
 	width:32px;
 	height:32px;
 	float:right;
-	background:url(../images/nav_settings.png) no-repeat;
+	background:url(../images/arrow.png) no-repeat;
   background-size: contain;
 	position:relative;
 	z-index:98;
@@ -89,7 +88,11 @@ header .logo img{
 }
 header .logo span{ position:absolute;  white-space:nowrap; padding-left:0.5px; color:#999; font-family: 'Lato'; }
 
-
+#nav-text {
+  color:white;
+  padding-left: 10px;
+  font-size: 30px;
+}
 /* --------------------------- Slide Menu (Right Menu)------------------------------*/
 #slideMenu {
 	width:250px;
