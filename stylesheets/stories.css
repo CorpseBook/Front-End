@@ -198,7 +198,17 @@ section{
 	}
 }
 @media only screen and (max-width: 460px) {
-	.search-container { left: 23%; }
+	.search-container {
+    left: 23%;
+  }
+}
+@media only screen and (max-width: 345px) {
+  #centered-menu {
+    width:280px !important;
+  }
+  #centered-menu ul li {
+    width: 255px;
+  }
 }
 @media only screen and (max-width: 650px) {
   #centered-menu {
