@@ -5,22 +5,6 @@ body {
 	background-color: #FFFFFF;
 	min-height: 100%;
 }
-.search-container {
-	/*right: 2%;*/
-	left: 50%;
-  padding:10px 0 0 0;
-}
-
-.search-container input#search {
-  background:red;
-  width:40%;
-}
-
-.search-container input#search_submit {
-  background:blue;
-  height:30px;
-  width:10%;
-}
 
 section.button-group {
   	height: 30px;
@@ -145,34 +129,6 @@ span.pull-right.title.color-red.location {
 }
 /* End tab menu */
 
-@media only screen and (max-width: 767px) {
-	.search-container {
-		left: 25%;
-		right: 22%;
-	}
-}
-
-@media only screen and (max-width: 460px) {
-	.search-container { left: 23%; }
-}
-@media only screen and (max-width: 650px) {
-  #centered-menu {
-    max-width:280px !important;
-  }
-  #centered-menu ul li#completed a,
-  #centered-menu ul li#uncompleted a,
-  #centered-menu ul li#map a,
-  #centered-menu ul li#list a {
-    border-radius: 10px 10px 10px 10px !important;
-    border:2px solid #4FC3F7;
-  }
-}
-
-@media only screen and (max-width: 1210px){
-  #centered-menu {
-    max-width:570px;
-  }
-}
 
 
 
@@ -184,10 +140,12 @@ span.pull-right.title.color-red.location {
 .main-story .container-story {
   padding: 0 100px 0 0;
   overflow: hidden;
+  border-radius: 10px;
 }
 .main-story{
   background:#f2f2f2;
   margin-top: 15px;
+  border-radius: 10px;
 }
 
 .content-story {
@@ -200,7 +158,6 @@ span.pull-right.title.color-red.location {
   margin-right: -100px;
   width: 100px;
   background-color: #4FC3F7;
-  /*background-image: url(../images/add-contribution.png);*/
 }
 .content-story,
 .sidebar {
@@ -227,6 +184,7 @@ section{
     margin-right: 0;
     width: 100%;
     background-color: #4FC3F7;
+    border-radius: 0 0 10px 10px;
   }
   .sidebar img{
     width: 30px;
@@ -239,5 +197,34 @@ section{
   section {
     padding: 10px 20px 0 20px;
     text-align: justify;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+	.search-container {
+		left: 25%;
+		right: 22%;
+	}
+}
+
+@media only screen and (max-width: 460px) {
+	.search-container { left: 23%; }
+}
+@media only screen and (max-width: 650px) {
+  #centered-menu {
+    max-width:280px !important;
+  }
+  #centered-menu ul li#completed a,
+  #centered-menu ul li#uncompleted a,
+  #centered-menu ul li#map a,
+  #centered-menu ul li#list a {
+    border-radius: 10px 10px 10px 10px !important;
+    border:2px solid #4FC3F7;
+  }
+}
+
+@media only screen and (max-width: 1210px){
+  #centered-menu {
+    max-width:570px;
   }
 }

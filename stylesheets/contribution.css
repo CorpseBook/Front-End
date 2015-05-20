@@ -20,7 +20,8 @@
 	display:inline-block;
 	color:#ffffff;
 	font-size:15px;
-	padding:15px;
+	padding:15px 105px;
+	float:right;
 }
 
 .btn-contribution:hover{
